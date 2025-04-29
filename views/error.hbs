@@ -1,6 +1,7 @@
-extends layout
+{{!-- Extensão do layout --}}
+{{!-- O layout deve ser definido em outro arquivo, por exemplo, layout.hbs --}}
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+{{!-- Bloco de conteúdo --}}
+<h1>{{message}}</h1>
+<h2>{{error.status}}</h2>
+<pre>{{error.stack}}</pre>
